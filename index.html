@@ -3,24 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Roblox Sign Up</title>
+  <title>Roblox Games</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <img src="roblox_logo.png" alt="Roblox Logo">
-      <h1>Sign Up</h1>
+  <header>
+    <img src="roblox_logo.png" alt="Roblox Logo">
+    <h1>Roblox Games</h1>
+  </header>
+  <main>
+    <div class="game">
+      <img src="game1_thumbnail.png" alt="Game 1 Thumbnail">
+      <h2>Game 1</h2>
+      <p>Description of Game 1.</p>
+      <a href="game1.html">Play Game</a>
     </div>
-    <form id="signup-form" onsubmit="return validateForm()" action="submit_signup.php" method="POST">
-      <input type="text" name="username" placeholder="Username" required>
-      <input type="email" name="email" placeholder="Email" required>
-      <input type="password" name="password" placeholder="Password" required>
-      <input type="password" name="confirm_password" placeholder="Confirm Password" required>
-      <button type="submit">Sign Up</button>
-    </form>
-    <p id="vpn-warning" style="display: none;">VPN usage is not allowed for signup. Please disable your VPN and try again.</p>
-  </div>
-  <script src="script.js"></script>
+    <div class="game">
+      <img src="game2_thumbnail.png" alt="Game 2 Thumbnail">
+      <h2>Game 2</h2>
+      <p>Description of Game 2.</p>
+      <a href="game2.html">Play Game</a>
+    </div>
+    <!-- Add more games here -->
+  </main>
+  <footer>
+    <p>© 2023 Roblox Corporation. All rights reserved.</p>
+  </footer>
 </body>
 </html>
+
