@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roblox Sign Up</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="roblox_logo.png" alt="Roblox Logo">
+      <h1>Sign Up</h1>
+    </div>
+    <form id="signup-form" onsubmit="return validateForm()" action="submit_signup.php" method="POST">
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+      <button type="submit">Sign Up</button>
+    </form>
+    <p id="vpn-warning" style="display: none;">VPN usage is not allowed for signup. Please disable your VPN and try again.</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
